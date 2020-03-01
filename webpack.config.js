@@ -32,7 +32,7 @@ module.exports = {
     contentScript: "./scripts/contentScript.ts",
     popup: "./scripts/popup.ts",
     options: "./scripts/options.ts",
-    styles: ["./styles/popup.scss", "./styles/options.scss"]
+    styles: ["./styles/popup.scss", "./styles/options.scss", "./styles/skin.scss"]
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
