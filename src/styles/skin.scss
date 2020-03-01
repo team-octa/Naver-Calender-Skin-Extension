@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap&subset=korean');
-
 * {
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif !important;
 	font-weight: 400;
 }
 
 
 /* 날짜 표시 타이틀 */
+
 
 
 .sort_area .date_view .date {
@@ -15,95 +14,97 @@
     font-weight: bold;
     font-size: 24px;
     color: #333;
+
+    &:after {
+        font-size: 10.5px;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        content: "Designed By 청명 (@cheong_myeong__)";
+        color: steelblue;
+        line-height: 1px;
+        cursor: pointer;
+    }
 }
 
-.sort_area .date_view .date:after {
-	font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: -0.3px;
-    content: "Designed By 청명 (@cheong_myeong__)";
-    color: steelblue;
-    line-height: 1px;
-    cursor: pointer;
-}
 
 /* 필터 테이블 위치 수정 */
 
 #content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type {
-	left: 720px;
-}
+    left: 720px;
 
-/*
+    
+    /*
 
-  날짜 필터
+    날짜 필터
 
-*/
+    */
+    
+    button {
+        background-color: white;
 
-#content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type > button {
-    background-color: white;
-}
+        &._day.diary {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            width: 85px;
+            font-family: Noto Sans KR;
+            font-weight: 700; 
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            letter-spacing: 0.3px;
+        }
 
-#content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type > button._day.diary {
-	border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 85px;
-    font-family: Noto Sans KR;
-    font-weight: 700; 
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    letter-spacing: 0.3px;
-}
+        &._week, button._month, button._list {
+            width: 80px;
+            font-family: Noto Sans KR;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            letter-spacing: 0.3px;
+        }
 
-#content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type > button._week, button._month, button._list {
-    width: 80px;
-    font-family: Noto Sans KR;
-    font-weight: 700;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    letter-spacing: 0.3px;
-}
+        &._user {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            width: 85px;
+            font-family: Noto Sans KR;
+            font-weight: 700; 
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            letter-spacing: 0.3px;
+        }
 
-#content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type > button._user {
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	width: 85px;
-	font-family: Noto Sans KR;
-	font-weight: 700; 
-	font-size: 14px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 5px;
-	letter-spacing: 0.3px;
-}
+        &.custom_layer {
+            position: relative;
+            right: 16px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
 
-#content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type > button.custom_layer {
-    position: relative;
-	right: 16px;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-}
-
-#content_top > div.sort_area > div.view_type_area > div.view_type.team_view_type > button:focus {
-	outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 
 /*  상단 테이블 월~일  */
 
-.monthly_calendar .week {
+div.monthly_calendar > table.week {
 	border-bottom: none; 
-	background: white; 
-}
-
-.monthly_calendar .week th {
-	text-align: center;
+    background: white; 
+    
+    th {
+        text-align: center;
+    }
 }
 
 /*
@@ -114,13 +115,13 @@
 
 .monthly_calendar .schedule {
 	border-radius: 100px;
-	padding: 2px 5px;
-}
+    padding: 2px 5px;
+    
+    a {
+        text-decoration: none;
 
-.monthly_calendar .schedule .info > a {
-	text-decoration: none;
-}
-
-.monthly_calendar .schedule .info > a:hover {
-	text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
