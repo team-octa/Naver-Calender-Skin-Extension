@@ -1,7 +1,6 @@
 <h1 align="center">🚀 Naver-Calender-Skin-Extension</h1>
 <p align="center">Web Extension starter to build "Write Once Run on Any Browser" extension</p>
-<h3 align="center">🙋‍♂️ Maintained by <a href="https://github.com/cheongan">@cheongan</a></h3>
-
+<h3 align="center">🙋‍♂️ Maintained by <a href="https://github.com/Curo-Dev">@Curo-Dev</a></h3>
 
 ## Features
 
