@@ -2,7 +2,6 @@
 <p align="center">Web Extension starter to build "Write Once Run on Any Browser" extension</p>
 <h3 align="center">🙋‍♂️ Maintained by <a href="https://github.com/Curo-Dev">@Curo-Dev</a></h3>
 
-
 ## Features
 
 - Cross Browser Support (Web-Extensions API) with mozilla's polyfill
