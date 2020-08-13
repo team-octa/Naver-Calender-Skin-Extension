@@ -8,12 +8,13 @@
 
 
 
-.sort_area .date_view .date {
-	display: inline-grid;
-    margin: 6px 10px 0 0;
-    font-weight: bold;
-    font-size: 24px;
-    color: #333;
+.sort_area > .date_view > .date {
+    display: inline-flex !important;
+    flex-direction: column !important;
+    font-weight: bold !important;
+    font-size: 24px !important;
+    color: #333 !important;
+    margin: 0 !important;
 
     &:after {
         font-size: 10.5px;
@@ -56,7 +57,7 @@
             letter-spacing: 0.3px;
         }
 
-        &._week, button._month, button._list {
+        &._week, &._month, &._list {
             width: 80px;
             font-family: Noto Sans KR;
             font-weight: 700;
@@ -125,3 +126,4 @@ div.monthly_calendar > table.week {
         }
     }
 }
+
